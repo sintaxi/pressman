@@ -1,4 +1,4 @@
-# slush-emails
+# pressman
 
 ## Making emails awesome is fun and easy!
 
