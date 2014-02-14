@@ -1,0 +1,20 @@
+{
+  "name": "pressman",
+  "version": "0.1.0",
+  "description": "email templating system",
+  "author": "Brock Whitten <brock@sintaxi.com>",
+  "tags": ["email", "templating", "jade", "ejs"],
+  "main": "lib/index.js",
+  "private": true,
+  "dependencies":{
+    "terraform":"0.6.2",
+    "thug": "0.4.3"
+  },
+  "devDependencies":{
+    "should":"3.1.0",
+    "mocha": "1.17.1"
+  },
+  "scripts": {
+    "test": "mocha test"
+  }
+}
