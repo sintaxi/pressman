@@ -2,14 +2,28 @@
 
 ## Making emails awesome is fun and easy!
 
-    var email = require("slush-email")
 
-    email("welcome", {...}, function(err, mgs){
+Specify a templates directory with your email templates in them like so...
+
+    templates
+      |
+      |- welcome
+      |   |- html.jade
+      |   `- text.ejs
+      `- password-reset
+          |- html.jade
+          `- text.ejs
+
+Next you then may render whichever template is needed...
+
+    var pressman = require("pressman")(__dirname + "/templates")
+
+    pressman.render("welcome", {...}, function(err, mgs){
       console.log(mgs)
-      // returns..
       // { text: "Welcome", html: "<h1>Welcome</h1>" }
     })
 
-    email("invite", { token: token }, function(err, mgs){
-      console.log(mgs)
+    pressman.render("password-reset", { token: token }, function(err, mgs){
+      /// console.log(mgs)
     })
+
