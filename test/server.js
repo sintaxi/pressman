@@ -1,10 +1,10 @@
-var herald = require("../")(__dirname + "/templates")
+var pressman = require("../")(__dirname + "/templates")
 var should = require("should")
 
 describe("server:", function(){
 
   before(function(done){
-    herald.listen(9001, function(){
+    pressman.listen(9001, function(){
       done()
     })
   })
