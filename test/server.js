@@ -1,4 +1,4 @@
-var pressman = require("../")(__dirname + "/templates")
+var pressman = require("../")(__dirname + "/templates", { myglobal: "foo" })
 var should = require("should")
 
 describe("server:", function(){

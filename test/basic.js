@@ -1,4 +1,4 @@
-var pressman = require("../")(__dirname + "/templates")
+var pressman = require("../")(__dirname + "/templates", { myglobal: "foo" })
 var should   = require("should")
 
 describe("email", function(){
@@ -8,6 +8,16 @@ describe("email", function(){
       should.not.exist(err)
       body.should.have.property("text")
       body.should.have.property("html")
+      done()
+    })
+  })
+
+  it("should have globals", function(done){
+    pressman.render("welcome", {}, function(err, body){
+      should.not.exist(err)
+      body.should.have.property("text")
+      body.should.have.property("html")
+      body.html.should.include("foo")
       done()
     })
   })
