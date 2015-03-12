@@ -1,2 +1,9 @@
-h1 Slush.io
-!= yield
+doctype strict
+html(xmlns="http://www.w3.org/1999/xhtml")
+  head
+    | <style type="text/css">
+    include main.css
+    | </style>
+  body
+    h1 Slush.io
+    != yield
