@@ -1,0 +1,14 @@
+h1 {
+  color: pink;
+}
+
+body {
+  background: red;
+  font-family: AvenirNext, Futura, Verdana, sans-serif;
+}
+
+@media max-width(500px) {
+  body {
+    background: orange;
+  }
+}

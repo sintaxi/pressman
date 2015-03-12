@@ -30,4 +30,20 @@ describe("email", function(){
     })
   })
 
+  it("should inline CSS", function(done){
+    pressman.render("welcome", {}, function(err, body){
+      should.not.exist(err)
+      // it("should not include link tags", function(done) {
+        body.html.should.not.include("<link")
+      // })
+      // it("should not include non-media query styles in the head", function(done) {
+        body.html.should.not.include("<style type=\"text/css\">h1 {")
+      // })
+      // it("should inline styles outside of media queries", function(done) {
+        body.html.should.include("<h1 style=\"color: pink\">")
+      // })
+      done()
+    })
+  })
+
 })
