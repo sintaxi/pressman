@@ -1,10 +1,10 @@
-h1 {
-  color: pink;
-}
-
 body {
   background: red;
   font-family: AvenirNext, Futura, Verdana, sans-serif;
+}
+
+h1 {
+  color: blue;
 }
 
 @media max-width(500px) {

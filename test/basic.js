@@ -45,7 +45,7 @@ describe("email", function(){
       should.not.exist(err)
       body.html.should.not.include("<link")
       body.html.should.not.include("<style type=\"text/css\">h1 {")
-      body.html.should.include("<h1 style=\"color: pink\">")
+      body.html.should.include("<h1 style=\"color: blue;\">")
       done()
     })
   })
