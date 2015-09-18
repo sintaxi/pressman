@@ -46,7 +46,7 @@ describe("email", function(){
       body.html.should.not.include("<link")
       body.html.should.not.include("<style type=\"text/css\">h1 {")
       body.html.should.include("<h1 style=\"color: blue;\">")
-      body.html.should.include("<style type=\"text/css\">@media")
+      body.html.should.include("@media")
       done()
     })
   })
