@@ -1,6 +1,6 @@
 {
   "name": "pressman",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "email templating system",
   "author": "Brock Whitten <brock@sintaxi.com>",
   "tags": ["email", "templating", "jade", "ejs"],
