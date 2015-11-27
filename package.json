@@ -1,6 +1,6 @@
 {
   "name": "pressman",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "email templating system",
   "author": "Brock Whitten <brock@sintaxi.com>",
   "contributors": [
