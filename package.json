@@ -3,6 +3,10 @@
   "version": "0.7.1",
   "description": "email templating system",
   "author": "Brock Whitten <brock@sintaxi.com>",
+  "contributors": [
+    "Brock Whitten   <brock@chloi.io>   (http://sintaxi.com)",
+    "Kenneth Ormandy <kenneth@chloi.io> (http://kennethormandy.com)"
+  ],
   "tags": ["email", "templating", "jade", "ejs"],
   "main": "lib/index.js",
   "dependencies":{
