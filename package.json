@@ -6,11 +6,11 @@
   "tags": ["email", "templating", "jade", "ejs"],
   "main": "lib/index.js",
   "dependencies":{
-    "terraform":"0.12.1",
+    "terraform":"0.13.2",
     "thug": "0.4.3",
-    "juice": "1.0.0"
+    "juice": "1.8.0"
   },
-  "devDependencies":{
+  "devDependencies": {
     "should":"3.1.0",
     "mocha": "1.17.1"
   },
