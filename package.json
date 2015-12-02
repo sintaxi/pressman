@@ -7,15 +7,20 @@
     "Brock Whitten   <brock@chloi.io>   (http://sintaxi.com)",
     "Kenneth Ormandy <kenneth@chloi.io> (http://kennethormandy.com)"
   ],
-  "tags": ["email", "templating", "jade", "ejs"],
+  "tags": [
+    "email",
+    "templating",
+    "jade",
+    "ejs"
+  ],
   "main": "lib/index.js",
-  "dependencies":{
-    "terraform":"0.13.2",
-    "thug": "0.4.3",
-    "juice": "1.8.0"
+  "dependencies": {
+    "juice": "1.8.1",
+    "terraform": "0.13.2",
+    "thug": "0.4.3"
   },
   "devDependencies": {
-    "should":"3.1.0",
+    "should": "3.1.0",
     "mocha": "1.17.1"
   },
   "scripts": {
