@@ -1,6 +1,6 @@
 {
   "name": "pressman",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "email templating system",
   "author": "Brock Whitten <brock@sintaxi.com>",
   "contributors": [
@@ -16,7 +16,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "juice": "1.8.1",
-    "terraform": "0.13.2",
+    "terraform": "1.4.1",
     "thug": "0.4.3"
   },
   "devDependencies": {
