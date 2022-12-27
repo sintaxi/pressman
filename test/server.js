@@ -3,8 +3,9 @@ var should = require("should")
 
 describe("server:", function(){
 
+  var server;
   before(function(done){
-    pressman.listen(9001, function(){
+    server = pressman.listen(9001, function(){
       done()
     })
   })
@@ -12,4 +13,11 @@ describe("server:", function(){
   it("should have a test server", function(done){
     done()
   })
+
+  after(function(done){
+    server.close(function(){
+      done()
+    })
+  })
+
 })
