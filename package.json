@@ -16,7 +16,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "juice": "8.1.0",
-    "terraform": "1.22.1",
+    "terraform": "1.23.0",
     "thug": "0.4.3"
   },
   "devDependencies": {
@@ -24,6 +24,10 @@
     "mocha": "9.*"
   },
   "scripts": {
-    "test": "mocha test"
+    "prepare": "git config core.hooksPath ./hooks",
+    "test": "mocha test",
+    "preversion": "npm test",
+    "version": "git push",
+    "postversion": "git push --no-verify && git push --tags --no-verify"
   }
 }
