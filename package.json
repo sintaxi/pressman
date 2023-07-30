@@ -27,7 +27,7 @@
     "prepare": "git config core.hooksPath ./hooks",
     "test": "mocha test",
     "preversion": "npm test",
-    "version": "git push",
+    "version": "npm publish",
     "postversion": "git push --no-verify && git push --tags --no-verify"
   }
 }
