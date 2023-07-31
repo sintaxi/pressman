@@ -16,7 +16,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "juice": "9.1.0",
-    "terraform": "1.23.0",
+    "terraform": "1.22.1",
     "thug": "0.4.3"
   },
   "devDependencies": {
